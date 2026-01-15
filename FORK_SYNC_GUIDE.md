@@ -228,7 +228,58 @@ git pull --rebase upstream main
 git pull upstream main
 ```
 
-#### Issue 4: Codespace is stuck/broken
+#### Issue 4: "You're on branch X but trying to push to main"
+**Problem:** You see this error:
+```
+! [rejected]        main -> main (fetch first)
+error: failed to push some refs
+```
+
+**Check what branch you're on:**
+```bash
+git branch
+# Shows current branch with * marker
+```
+
+**Solution A:** If you want to work on main:
+```bash
+# Switch to main branch
+git checkout main
+
+# Now pull the latest changes
+git pull origin main
+
+# Make your changes, then commit and push
+git add .
+git commit -m "Your message"
+git push origin main
+```
+
+**Solution B:** If you want to work on your current branch:
+```bash
+# Push your current branch instead
+git push origin YOUR_BRANCH_NAME
+
+# For example, if you're on 'readme-branch':
+git push origin readme-branch
+```
+
+**Solution C:** If you want to sync your fork first:
+```bash
+# Switch to main
+git checkout main
+
+# Sync with upstream
+git pull upstream main
+
+# Push to your fork
+git push origin main
+
+# Switch back to your branch
+git checkout YOUR_BRANCH_NAME
+```
+
+#### Issue 5: Codespace is stuck/broken
 **Solution:**
 1. Save your work: copy files to your local computer or another location
 2. Delete the Codespace on GitHub
@@ -520,7 +571,58 @@ git pull --rebase upstream main
 git pull upstream main
 ```
 
-#### Problem 4: Codespace je zaglavljen/pokvaren
+#### Problem 4: "Nalazite se na branchu X ali pokušavate pushati na main"
+**Problem:** Vidite ovu grešku:
+```
+! [rejected]        main -> main (fetch first)
+error: failed to push some refs
+```
+
+**Provjerite na kojem ste branchu:**
+```bash
+git branch
+# Pokazuje trenutni branch sa * oznakom
+```
+
+**Rješenje A:** Ako želite raditi na main:
+```bash
+# Prebacite se na main branch
+git checkout main
+
+# Sada povucite najnovije promjene
+git pull origin main
+
+# Napravite svoje promjene, zatim commitajte i pushajte
+git add .
+git commit -m "Vaša poruka"
+git push origin main
+```
+
+**Rješenje B:** Ako želite raditi na svom trenutnom branchu:
+```bash
+# Pushajte svoj trenutni branch umjesto toga
+git push origin IME_VAŠEG_BRANCHA
+
+# Na primjer, ako ste na 'readme-branch':
+git push origin readme-branch
+```
+
+**Rješenje C:** Ako prvo želite sinkronizirati svoj fork:
+```bash
+# Prebacite se na main
+git checkout main
+
+# Sinkronizirajte s upstreamom
+git pull upstream main
+
+# Pushajte na svoj fork
+git push origin main
+
+# Vratite se na svoj branch
+git checkout IME_VAŠEG_BRANCHA
+```
+
+#### Problem 5: Codespace je zaglavljen/pokvaren
 **Rješenje:**
 1. Spremite svoj rad: kopirajte datoteke na lokalno računalo ili drugo mjesto
 2. Obrišite Codespace na GitHubu
