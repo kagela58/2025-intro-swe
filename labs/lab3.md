@@ -135,6 +135,20 @@ Before, during, and after edits:
 
 ## Troubleshooting
 
+### ⚠️ Problems Syncing Your Fork?
+
+If you're having trouble with the "Sync fork" button or getting errors about losing data, **see the comprehensive [Fork Sync Guide](../FORK_SYNC_GUIDE.md)** which covers:
+- Safe sync methods with uncommitted changes
+- Handling merge conflicts step-by-step
+- Visual diagrams and examples
+- Available in both English and Croatian
+
+For the specific error "Can't sync fork" or "Discarding commits":
+* Follow [Fork Sync Guide - Method 1](../FORK_SYNC_GUIDE.md#method-1-safe-sync-with-uncommitted-changes-recommended) to keep your changes
+* Or see [Fork Sync Guide - Croatian section](../FORK_SYNC_GUIDE.md#hrvatski) for instructions in Croatian
+
+### Common Quick Fixes
+
 **“Nothing to PR / 0 changed files”**
 You created a folder but no files. Add `README.md` or `.gitkeep`.
 

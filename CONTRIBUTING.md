@@ -71,6 +71,25 @@ git push origin lab1-username
 # Follow the PR template and wait for peer review
 ```
 
+#### Keeping Your Fork in Sync
+**Important:** If you have trouble syncing your fork or see warnings about losing commits, see the comprehensive [Fork Sync Guide](FORK_SYNC_GUIDE.md) for detailed instructions in English and Croatian.
+
+**Quick sync workflow:**
+```bash
+# Save your work first
+git add .
+git commit -m "Save before sync"
+git push origin main
+
+# Add upstream (one-time setup)
+git remote add upstream https://github.com/nibzard/2025-intro-swe.git
+
+# Sync with upstream
+git fetch upstream
+git merge upstream/main
+git push origin main
+```
+
 ### For All Contributors
 
 #### General Guidelines
