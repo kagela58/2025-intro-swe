@@ -185,15 +185,33 @@ error: src refspec main does not match any
 - Check your remote URL: `git remote -v`
 - Update remote if needed: `git remote set-url origin https://github.com/YOUR_USERNAME/2025-intro-swe.git`
 
+### Issue: Can't Sync Fork on GitHub
+**Problem:** When you click "Sync fork" button, you see errors or warnings about losing commits.
+
+**Solution:** Don't panic! Your work is safe. See the comprehensive [Fork Sync Guide](../FORK_SYNC_GUIDE.md) which provides:
+- Step-by-step instructions for safe syncing
+- How to handle conflicts without losing data
+- Visual diagrams and examples
+- Instructions in both English and Croatian
+
+**Quick fix:** Before syncing, commit and push your changes first:
+```bash
+git add .
+git commit -m "Save my work before sync"
+git push origin main
+```
+Then follow [Method 1 in the Fork Sync Guide](../FORK_SYNC_GUIDE.md#method-1-safe-sync-with-uncommitted-changes-recommended).
+
 ## Next Steps
 
 After your pull request is reviewed and merged:
-1. Keep your fork updated with the original repository
+1. **Keep your fork updated** with the original repository - see [Fork Sync Guide](../FORK_SYNC_GUIDE.md) for detailed instructions
 2. Delete your local lab files if needed (but keep them for reference)
 3. Prepare for Lab 2
 
 ## Additional Resources
 
+- [Fork Sync Guide](../FORK_SYNC_GUIDE.md) - Comprehensive guide for keeping your fork in sync (English and Croatian)
 - [GitHub Docs: Forking a repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
 - [Git Basics Documentation](https://git-scm.com/doc)
 - [Python Official Tutorial](https://docs.python.org/3/tutorial/)
