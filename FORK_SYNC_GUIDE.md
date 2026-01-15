@@ -592,7 +592,7 @@ Ako ste još uvijek zaglavili:
 
 **Za instruktore:**
 - Razmislite o zaštiti `main` brancha da spriječite force push
-- Razmotrrite korištenje branch protection rules
+- Razmotrite korištenje branch protection rules
 - Educirajte studente o važnosti redovite sinkronizacije
 
 **Za studente:**
